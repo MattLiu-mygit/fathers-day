@@ -19,8 +19,9 @@ const ButtonGame = (props) => {
         setRandX(randNum(-100, 100));
         setRandY(randNum(0, 50));
     }
-
+    
     return <div>
+        <div>Quick! Hit the WaWas!</div>
         <div className = 'timer'>Time left: {secondsLeft}</div>
         {
         secondsLeft > 0 ?
