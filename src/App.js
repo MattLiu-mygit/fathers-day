@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import ButtonGame from './ButtonGame';
 import './App.css';
+import StartScreen from './StartScreen';
 
 function App() {
+  const [score, setScore] = useState(0);
+  const [gameShown, setGameShown] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      Happy Father's Day!!!
+      <div className = 'score'>Attention Points: {score}</div>
+      <button onClick = {() => {setGameShown(0);}}>Start Screen</button>
+      <button onClick = {() => {setGameShown(1);}}>Button Game</button>
+      {
+        gameShown === 0 ?
+        <StartScreen />
+        : gameShown === 1 ?
+        <ButtonGame score = {score} setScore = {setScore}/>
+        : null
+      }
+      </div>
   );
 }
 
