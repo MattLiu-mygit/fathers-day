@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 const ButtonGame = (props) => {
-    const [secondsLeft, setSecondsLeft] = useState(10);
+    const [secondsLeft, setSecondsLeft] = useState(20);
     const [randX, setRandX] = useState(30);
     const [randY, setRandY] = useState(30);
 
@@ -20,12 +20,12 @@ const ButtonGame = (props) => {
         setRandY(randNum(0, 50));
     }
     
-    return <div>
+    return <div className = 'ButtonGame'>
         <div>Quick! Hit the WaWas!</div>
         <div className = 'timer'>Time left: {secondsLeft}</div>
         {
         secondsLeft > 0 ?
-        <button style = {{marginLeft: randX + 'rem', marginTop: randY + 'rem'}} onClick = {handleClick}>WaWa!</button>
+        <button className = 'wawa' style = {{marginLeft: randX + 'rem', marginTop: randY + 'rem'}} onClick = {handleClick}>WaWa!</button>
         : <div>Nice! Try another game or redeem your attention points!</div>
         }
     </div>

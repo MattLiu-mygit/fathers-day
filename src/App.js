@@ -10,11 +10,13 @@ function App() {
   const [noticed, setNoticed] = useState(0);
   return (
     <div className="App">
-      Happy Father's Day!!!
+      <h1 className = 'happy'>Happy Father's Day!!!</h1>
       <div className = 'score'>Attention Points: {score}</div>
+      <div className = 'title_buttons'>
       <button onClick = {() => {setGameShown(0);}}>Start Screen</button>
       <button onClick = {() => {setGameShown(1);}}>Button Game</button>
       <button onClick = {() => {setGameShown(2);}}>Shoulder Game</button>
+      </div>
       {
         gameShown === 0 ?
         <StartScreen score = {score} setScore = {setScore} noticed = {noticed} setNoticed = {setNoticed}/>

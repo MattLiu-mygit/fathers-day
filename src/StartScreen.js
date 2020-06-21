@@ -16,8 +16,8 @@ const StartScreen = (props) => {
     }
 
     return <div>
-        <div className = 'letter'>
         <img className = 'dad1' src = {dad1} alt = 'dad pic not found'/>
+        <div className = 'letter'>
         <div>Dear dad,</div>
         <div>Happy father's day! Thank you for all the effort you put into helping me with computer science, for always helping me with math, for playing basketball and taking walks with us, and being a supportive parent who is always there for us.</div>
         <div>Thank you for showing us so much care by personally teaching and supporting us. Thank you for putting in so much time and effort when mom wouldn't. Thank you for doing a lot of the cooking, almost all the cleaning, and fixing everything in the house.</div>

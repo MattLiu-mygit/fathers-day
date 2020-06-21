@@ -10,7 +10,7 @@ const ShoulderGame = (props) => {
     const [rightCold, setRightCold] = useState(true);
     const [leftSecondsLeft, setLeftSecondsLeft] = useState(5);
     const [rightSecondsLeft, setRightSecondsLeft] = useState(5);
-    const [gameSecondsLeft, setGameSecondsLeft] = useState(30);
+    const [gameSecondsLeft, setGameSecondsLeft] = useState(3000);
 
     let leftColor = 'blue';
     let rightColor = 'blue';
@@ -19,14 +19,14 @@ const ShoulderGame = (props) => {
         leftColor = 'blue';
     }
     else {
-        leftColor = 'red';
+        leftColor = '#e9692c';
     }
 
     if (rightCold) {
         rightColor = 'blue';
     }
     else {
-        rightColor = 'red';
+        rightColor = '#e9692c';
     }
 
 

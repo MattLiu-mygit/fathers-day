@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 110, 255);
+  color: whitesmoke;
+  
+  font-family: 'Bradley Hand', cursive;
 }
 
 code {
@@ -40,4 +44,51 @@ code {
   height: 10rem;
   z-index: 51px;
   display: inline-block
+}
+
+.right button {
+  background-color: blueviolet;
+  border-radius: 12px;
+}
+
+.left button {
+  background-color: blueviolet;
+  border-radius: 12px;
+}
+
+.happy {
+  font-family: 'Snell Roundhand', cursive;
+  font-size: 400%;
+}
+
+.score {
+  font-family: 'OCR A Std', monospace;
+  border: solid;
+  width: 15rem;
+  border-radius: 12px;
+  margin-left: 43.5%;
+  margin-bottom: 1rem;
+}
+
+.title_buttons button{
+  font-family: 'OCR A Std', monospace;
+  background-color: white;
+  margin: 1rem;
+}
+
+.letter {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.game_instructions {
+  margin-bottom: 2rem;
+}
+
+.ButtonGame button{
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 4rem;
+  font-family: 'Bradley Hand', cursive;
 }
