@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hand {
+  width: 60%;
+  position:relative;
+}
+
+.back {
+  position: absolute;
+  margin-left: 27rem;
+}
+
+.right {
+  margin-left: 4rem;
+  margin-top: 0rem;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  z-index: 52px;
+  display: inline-block
+}
+
+.left {
+  margin-left: 0rem;
+  margin-top: 8rem;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  z-index: 51px;
+  display: inline-block
+}

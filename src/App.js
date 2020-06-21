@@ -7,6 +7,7 @@ import ShoulderGame from './ShoulderGame';
 function App() {
   const [score, setScore] = useState(0);
   const [gameShown, setGameShown] = useState(0);
+  const [noticed, setNoticed] = useState(0);
   return (
     <div className="App">
       Happy Father's Day!!!
@@ -16,7 +17,7 @@ function App() {
       <button onClick = {() => {setGameShown(2);}}>Shoulder Game</button>
       {
         gameShown === 0 ?
-        <StartScreen/>
+        <StartScreen score = {score} setScore = {setScore} noticed = {noticed} setNoticed = {setNoticed}/>
         : gameShown === 1 ?
         <ButtonGame score = {score} setScore = {setScore}/>
         : gameShown === 2 ?
