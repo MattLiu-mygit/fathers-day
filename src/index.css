@@ -85,10 +85,17 @@ code {
   margin-bottom: 2rem;
 }
 
-.ButtonGame button{
+.ButtonGame button {
   background-color: transparent;
   border: none;
   color: red;
   font-size: 4rem;
   font-family: 'Bradley Hand', cursive;
+}
+
+.get_noticed {
+  margin-bottom: 1rem;
+  font-family: 'Bradley Hand', cursive;
+  border-radius: 12px;
+  background-color: white;
 }

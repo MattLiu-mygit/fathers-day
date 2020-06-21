@@ -28,7 +28,7 @@ const StartScreen = (props) => {
             <div>Let's do a fun game to celebrate father's day! Try out the button and shoulder game and get enough attention points to get noticed!</div>
             <div>Once you have enough points, click on the button below to unlock the noticed reward!</div>
         </div>
-        <button onClick = {handleClick}>Get Noticed! (Costs 5 attention points)</button>
+        <button className = 'get_noticed' onClick = {handleClick}>Get Noticed! (Costs 5 attention points)</button>
         {
             props.noticed === 1 ? 
             <div><img src = {grandpa} alt = 'grandpa not found'/></div>
