@@ -10,7 +10,7 @@ const ShoulderGame = (props) => {
     const [rightCold, setRightCold] = useState(true);
     const [leftSecondsLeft, setLeftSecondsLeft] = useState(5);
     const [rightSecondsLeft, setRightSecondsLeft] = useState(5);
-    const [gameSecondsLeft, setGameSecondsLeft] = useState(3000);
+    const [gameSecondsLeft, setGameSecondsLeft] = useState(30);
 
     let leftColor = 'blue';
     let rightColor = 'blue';
@@ -73,11 +73,11 @@ const ShoulderGame = (props) => {
     }
 
     return <div className = 'ShoulderGame'>
-        <div>timer = {gameSecondsLeft}</div>
+        <div>Time left: {gameSecondsLeft}</div>
         <div>Keep your hand on the cold (blue) side to get points!</div>
         {
         gameSecondsLeft !== 0 ?
-        <div className = 'shoudler_started'>
+        <div className = 'shoulder_started'>
         {
         handLocation === 0 ? 
             <div>

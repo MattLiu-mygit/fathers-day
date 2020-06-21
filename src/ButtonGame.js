@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 const ButtonGame = (props) => {
-    const [secondsLeft, setSecondsLeft] = useState(20);
+    const [secondsLeft, setSecondsLeft] = useState(10);
     const [randX, setRandX] = useState(30);
     const [randY, setRandY] = useState(30);
 
